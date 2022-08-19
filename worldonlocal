@@ -1,0 +1,9 @@
+boolean done = false;
+while(!done && scanner.hasNextLine()) {
+    String line = scanner.nextLine();
+    serverPrintOut.println("Echo from <Your name Here> Server: " + line);
+
+    if(line.toLowerCase().trim().equals("peace")) {
+        done = true;
+    }
+}
